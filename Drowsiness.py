@@ -37,7 +37,7 @@ while True:
 		if average_EAR < ear_threshold:
 			closed_eye_counter += 1
 			if closed_eye_counter >= limit_for_drowsiness:
-				os.system('say "WakeUp"')
+				os.system('say "Drowsy"')
 		else:
 			closed_eye_counter = 0
 	cv2.imshow("",frame)
