@@ -12,8 +12,8 @@ def eye_aspect_ratio(eye):
 	EAR = (A + B) / (2.0 * C)
 	return EAR
 	
-ear_threshold = 0.25
-limit_for_drowsiness = 20
+ear_threshold = 0.225
+limit_for_drowsiness = 15
 detecting_the_face_landmarks = dlib.get_frontal_face_detector()
 predicting_the_location_of_eyes = dlib.shape_predictor("pretrained_face_detector.dat")
 
@@ -45,4 +45,4 @@ while True:
 	if key == ord("q"):
 		break
 cv2.destroyAllWindows()
-camera_window.release() 
+camera_window.release()
